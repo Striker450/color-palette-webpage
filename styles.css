@@ -1,0 +1,139 @@
+body {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#app-title
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    padding: 2rem 1rem 0rem 2rem; /* top, right bottom left*/
+    max-width:max-content;
+    margin: auto;
+    cursor: pointer;
+    /* top, right, bottom, left*/
+    margin-bottom: 2.5%;
+}
+
+#main-nav
+{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #33bcaa;
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+#main-nav li {
+   float: left;
+}
+.the-nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding:12px 16px;
+  border-radius: 5px;
+  justify-content: space-evenly;
+  border-bottom: 2px solid #33ccbb;
+}
+.the-nav a:hover {
+    background-color: #3abacf;
+    min-width:fit-content;
+}
+.content-page {
+    margin-top: 2px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.box_one, .box_two, .box_three, 
+.box_four, .box_five, .box_six, .box_seven,
+.box_eight, .box_nine {
+    display: inline-block;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 27px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.image {
+    background-color: lightgrey;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 5px;
+}
+.box_one:hover .image{
+    background-color: #33ccbb;
+    cursor: pointer;
+}
+.box_two:hover .image {
+    background-color:bisque;
+    cursor: pointer;
+}
+.box_three:hover .image {
+    background-color:#5c5fac;
+    cursor: pointer;
+}
+.box_four:hover .image {
+    background-color:#abcdef;
+    cursor: pointer;
+}
+.box_five:hover .image {
+    background-color:#fbabdc;
+    cursor: pointer;
+}
+.box_six:hover .image {
+    background-color:#ffa500;
+    cursor: pointer;
+}
+.box_seven:hover .image {
+    background-color:crimson;
+    cursor: pointer;
+}
+.box_eight:hover .image {
+    background-color:Mediumseagreen;
+    cursor: pointer;
+}
+.box_nine:hover .image {
+    background-color:black;
+    cursor: pointer;
+}
+@media only screen and (max-width: 700px)
+{
+    #main-nav li {
+        float: none;
+    }
+    .the-nav a {
+        text-align: center;
+    }
+    #the-box {
+        text-align: center;
+    }
+    @media screen and (width: 400px) {
+        .box_one, .box_two, .box_three, 
+        .box_four, .box_five, .box_six .box_seven,
+        .box_eight, .box_nine{
+           display: block;
+           margin-left: 25px;
+      }
+      #app-title {
+        margin-left:-25px;
+      }
+      #the-box {
+        text-align: left;
+    }
+ }
+
+}
+footer {
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #3abacf;
+    color: white;
+    margin-top: 23px;
+    padding: 10px;
+}
+footer:hover {
+    cursor: pointer;
+}
+
+
